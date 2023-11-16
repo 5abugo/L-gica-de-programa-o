@@ -17,12 +17,12 @@
     <p id="MinhaMensagem"></p>
 
    <script>
-  domcument.getElementById("mBotao").addEventListener("click",
+  domcument.getElementById("mBotao").addEventListener("click"),
     function(){
 
-        let nome = domcument.getElementById("nome")
+        let nome = domcument.getElementById("nome").value;
 
-        document.getElementById("MinhaMensagem").inner.HTML = "Olá," + nome +"!";
+        document.getElementById("MinhaMensagem").inner.HTML = ´Olá, ${nome}`;
 
     }
   )
